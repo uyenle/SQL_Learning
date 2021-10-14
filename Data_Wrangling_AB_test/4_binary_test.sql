@@ -126,6 +126,7 @@ WHERE test_id = 7
 GROUP BY test_assignment
 ;
 
+
 -- A/B test app: https://thumbtack.github.io/abba/demo/abba.html
 
 -- RESULTS
