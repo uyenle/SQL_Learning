@@ -1,5 +1,5 @@
 -- Binary metric
--- 1- If user order after their test assignment 
+-- 1- If user order after their test assignment?
 
 SELECT 
   test_events.test_id,
@@ -37,7 +37,7 @@ GROUP BY
 ;
 
 
--- 2- the total number of order/invoice; ordered items and revenue 
+-- 2- the total number of order/invoice; ordered items and revenue of order after test assignment?
 
 SELECT 
   test_events.test_id,
@@ -80,7 +80,7 @@ GROUP BY
 ;
 
 
--- How many user order in each test_id? Here test_id = 7
+-- 3- How many user order in each test_id? Here test_id = 7
 
 SELECT 
   test_assignment,
@@ -128,6 +128,7 @@ GROUP BY test_assignment
 
 -- A/B test app: https://thumbtack.github.io/abba/demo/abba.html
 
+-- RESULTS
 --                                No trials   No successes
 -- Control   (no test_assignment)   19376	        2521
 -- Treatment (no test_assignment)   19271	        2633
